@@ -5,7 +5,7 @@ parse_documents <- function(documents){
       .x %>%
         purrr::imap_dfc(~{
           if(.y %in% c("deskriptor", "vorgangsbezug", "autoren_anzeige", "urheber", "ressort", "person_roles",
-                       "inkrafttreten", "verkuendung", "vorgang_verlinkung",
+                       "inkrafttreten", "verkuendung", "vorgang_verlinkung", "person",
                        "ueberweisung", "aktivitaet_anzeige", "beschlussfassung")){
             dt <- .x %>%
               purrr::compact() %>%
