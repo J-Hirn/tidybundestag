@@ -32,7 +32,7 @@ parse_documents <- function(documents){
 shape_url <- function(type,
                       id = NULL,
                       start_date = NULL, end_date = NULL, drucksache = NULL,
-                      plenarprotokoll = NULL, vorgang = NULL,
+                      plenarprotokoll = NULL, vorgang = NULL, vorgangstyp = NULL,
                       zuordnung = NULL, api_token){
 
   url <- glue::glue("https://search.dip.bundestag.de/api/v1/{type}?")
