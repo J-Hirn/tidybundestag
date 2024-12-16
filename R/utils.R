@@ -53,6 +53,7 @@ shape_url <- function(type,
   if(!is.null(drucksache)) url <- paste0(url, "f.drucksache=", drucksache, "&")
   if(!is.null(plenarprotokoll)) url <- paste0(url, "f.plenarprotokoll=", plenarprotokoll, "&")
   if(!is.null(vorgang)) url <- paste0(url, paste0("f.vorgang=", vorgang, "&", collapse = ""))
+  if(!is.null(vorgangstyp)) url <- paste0(url, paste0("f.vorgangstyp", utils::URLencode(vorgangstyp), "&", collapse = "")) #adding this to more specifically filter the type of vorgang
   if(!is.null(zuordnung)) url <- paste0(url, "f.zuordnung=", zuordnung, "&")
 
   url <- paste0(url, "apikey=", api_token)

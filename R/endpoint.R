@@ -18,12 +18,13 @@ bt_vorgang <- function(n_max = 100, api_token = NULL, quiet = F,
                        id = NULL,
                        start_date = NULL, end_date = NULL, drucksache = NULL,
                        plenarprotokoll = NULL,
+                       vorgangstyp = NULL,
                        zuordnung = NULL){
 
   get_documents(type = "vorgang", n_max = n_max, api_token = api_token, quiet = quiet,
                 id = id,
                 start_date = start_date, end_date = end_date, drucksache = drucksache,
-                plenarprotokoll = plenarprotokoll,
+                plenarprotokoll = plenarprotokoll, vorgangstyp = vorgangstyp,
                 zuordnung = zuordnung)
 }
 
